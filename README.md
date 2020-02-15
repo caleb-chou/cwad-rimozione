@@ -1,9 +1,9 @@
-# cwad-rimozione
-AR app
+# rimozione
+Android Application that utilizes ARCore augmented reality functionalities to create a paper tossing game.
 
-# Developers
+## Developers
 
-## Setting up 3-D models
+### Setting up 3-D models
 Due to storage limitations, 3-D models were not pushed to this repository. Steps to import them to the project:
 
 - Read the ARCore ["Import and preview 3D assets"](https://developers.google.com/ar/develop/java/sceneform/import-assets) page
