@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 29
@@ -35,3 +36,9 @@ dependencies {
     // Provides ArFragment, and other UX resources.
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
 }
+
+
+sceneform.asset('sampledata/models/trash_can.obj',
+        'default',
+        'sampledata/models/trash_can.sfa',
+        'src/main/assets/trash_can')

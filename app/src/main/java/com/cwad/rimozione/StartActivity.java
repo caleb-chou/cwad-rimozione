@@ -6,8 +6,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
@@ -27,6 +29,11 @@ public class StartActivity extends AppCompatActivity {
             Toast.makeText(this, "Camera Permission Granted", Toast.LENGTH_LONG).show();
         }
 
+        Button launchBtn = findViewById(R.id.launch_btn);
+        launchBtn.setOnClickListener(v -> {
+            Intent launchAR = new Intent(this, ArActivity.class);
+            startActivity(launchAR);
+        });
 
     }
 
@@ -45,8 +52,4 @@ public class StartActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
 }
