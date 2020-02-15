@@ -1,2 +1,0 @@
-# cwad-rimozione
-AR app
